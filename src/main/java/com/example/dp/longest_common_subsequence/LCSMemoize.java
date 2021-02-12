@@ -1,4 +1,4 @@
-package com.example.dp.lcs;
+package com.example.dp.longest_common_subsequence;
 
 import java.util.Arrays;
 

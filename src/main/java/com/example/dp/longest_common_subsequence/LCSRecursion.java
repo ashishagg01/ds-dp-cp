@@ -1,4 +1,4 @@
-package com.example.dp.lcs;
+package com.example.dp.longest_common_subsequence;
 
 public class LCSRecursion {
 
@@ -9,9 +9,12 @@ public class LCSRecursion {
     }
 
     private static int lcs(char[] x, char[] y, int n, int m) {
+        //think of the smallest valid input
         if(n==0||m==0){
             return 0;
         }
+
+        //choice diagram code
         if(x[n-1]==y[m-1]){
             return 1+lcs(x,y,n-1,m-1);
         }else{
