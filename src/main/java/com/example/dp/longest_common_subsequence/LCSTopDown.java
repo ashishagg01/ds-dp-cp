@@ -2,19 +2,18 @@ package com.example.dp.longest_common_subsequence;
 
 
 public class LCSTopDown {
-    private static int t[][];
 
     public static void main(String[] args) {
-        String x = "abckx";
-        String y = "abcdefghijkujuu";
+        String x = "geek";
+        String y = "eke";
         int m = x.length();
         int n = y.length();
-        t = new int[m+1][n+1];
+        int t[][] = new int[m+1][n+1];
 
-        System.out.println(lcs(x.toCharArray(),y.toCharArray(),m,n));
+        System.out.println(lcs(x.toCharArray(),y.toCharArray(),m,n,t));
     }
 
-    private static int lcs(char[] x, char[] y, int m, int n) {
+    public static int lcs(char[] x, char[] y, int m, int n, int[][] t) {
         for(int i=1;i<=m;i++) {
             for(int j=1;j<=n;j++) {
                 if (x[i - 1] == y[j - 1]) {
