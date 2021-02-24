@@ -1,4 +1,4 @@
-package com.example.dp.longest_common_subsequence;
+package com.example.dp.lcs;
 
 
 public class LCSTopDown {

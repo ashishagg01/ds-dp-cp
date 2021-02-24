@@ -1,4 +1,6 @@
-package com.example.dp.longest_common_subsequence;
+package com.example.dp.lcs.scs;
+
+import com.example.dp.lcs.LCSTopDown;
 
 public class ShortestSuperSequence {
 
